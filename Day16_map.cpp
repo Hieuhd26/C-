@@ -1,93 +1,85 @@
 #include <bits/stdc++.h>
 using namespace std;
+//{key, value}
+//insert
+//count
+//find: tra ve iterator khi tim thay, neu khong thay tra ve map.end()
+//erase
+// multimap
 
 int main() {
 //	map<int,int> mp;
-//	//cach 1
-//	mp[100] = 200;
-//	mp[23]= 34;
-//
-//	//cach 2
-//	mp.insert({300,400});
-//	cout << mp.size()<< endl;
-//	mp[100]=300;
-//	cout << mp.size()<< endl;
+//	mp[100] = 34;
+//	mp.insert({101,55});
+//	for(pair<int,int> x: mp) {
+//		cout << x.first << " " << x.second << endl;
+//	}
+//	for(auto x: mp) {
+//		cout << x.first << " " << x.second << endl;
+//	}
+//	for(map<int,int>::iterator it = mp.begin(); it!= mp.end();it++) {
+//		cout << (*it).first << " " << (*it).second << endl;
+//	}
 
-// vector co the tu dong tang kich thuoc
-//	vector<int> v;
-//	v.push_back(10);
-//	v.push_back(20);
-//	v.push_back(30);
-//	cout << v.size()<< endl;
-//	cout<< "Phan tu dau tien trong vector: " << v[0] << endl;
-//	cout<< "Phan tu cuoi cung trong vector: " << v[v.size()-1] <<endl;
-//
-//	for(int i=0; i<v.size(); i++) {
-//		cout << v[i] << " ";
+//	if(mp.count(101)!=0) {
+//		cout<< "Found";
+//	} else {
+//		cout << "Not Found";
 //	}
-//	cout << endl;
-//
-//	for (int a: v) {
-//		cout << a <<" ";
-//	}
-//	cout << endl;
-//
-//	for(vector<int>::iterator it= v.begin(); it!=v.end(); it++) {
-//		cout << *it << " ";
-//	}
-//	cout << endl;
-//
-//	for(auto it = v.begin(); it!=v.end(); it++) {
-//		cout << *it << " ";
-//	}
-//		cout << endl;
-//	//truy xuat phan tu
-//	cout<< v[2] << endl;
-//	//hoac
-//	cout << *(v.begin()+2) << endl;
 
+//	if(mp.find(1501)!= mp.end()) {
+//		cout<< "Found";
+//	} else {
+//		cout << "Not Found";
+//	}
+
+// in ra so lan xuat hien cua cac so trong mang
+
+//	map<int,int> mp;
 //	int n;
 //	cin >>n;
-//	vector<int> v(n);
-//	for(int i =0;i<n;i++){
-//		cin >> v[i];
-//	}
-//	cout <<endl;
-//	for(int i =0;i<n;i++){
-//		cout << v[i] <<" ";
-//	}
-
-//	int n;
-//	cin >>n;
-//	vector<int> v;
-//	for(int i =0;i<n;i++){
+//	for(int i =0; i <n; i++) {
 //		int x;
-//		cin >> x;
-//		v.push_back(x);
+//		cin >>x;
+//		mp[x]++;
 //	}
-//	cout <<endl;
-//	for(int i =0;i<n;i++){
-//		cout << v[i] <<" ";
+//	for(auto x: mp) {
+//		cout << x.first << " " << x.second << endl;
 //	}
 
+// dem so lan xuat hien cua cac tu trong mang va in ra kem tan xuat suat hien cua no
+//	map<int,int> mp;
 //	int n;
 //	cin >>n;
-//	vector<int> v(n,2);
-//	cout <<endl;
-//	for(int i =0;i<n;i++){
-//		cout << v[i] <<" ";
+//	int a[1000];
+//	for(int i =0; i <n; i++) {
+//		cin >>a[i];
+//		mp[a[i]]++;
+//	}
+//	for(int i =0; i<n; i++) {
+//		//cout << a[i] << " " << mp[a[i]] << endl;
+//		if(mp[a[i]] != 0) {
+//			cout << a[i] << " "<< mp[a[i]]<< endl;
+//			mp[a[i]] = 0;
+//		}
 //	}
 
-	string s = " ngon ngu   lap trinh java ";
-	stringstream ss(s);
-	string tmp;
-	vector<string> v;
-	while(ss >> tmp) {
-		v.push_back(tmp);
-	}
-	for(string a: v) {
-		cout << a << " ";
-	}
+//map<string,int> mp;
+//int n;cin>>n;
+//for(int i=0;i<n;i++){
+//	string s;cin>>s;
+//	mp[s]++;
+//}
+//int max_fre =0;
+//string res;
+//for(auto it: mp){
+//	if(it.second >= max_fre){  // >=
+//		max_fre = it.second;
+//		res = it.first;
+//	}
+//}
+//cout << res << " "<< max_fre << endl;
+
 
 	return 0;
 }
