@@ -1,0 +1,13 @@
+# Loại bỏ file thực thi trên Windows
+*.exe
+# Loại bỏ file thực thi trên Linux/macOS (thường không có đuôi)
+*.out
+*.app
+
+# Loại bỏ các folder build trung gian (nếu dùng Visual Studio)
+Debug/
+Release/
+x64/
+x86/
+*.o
+*.obj
